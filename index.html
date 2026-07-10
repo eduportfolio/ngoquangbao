@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ngô Quang Bảo — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ──────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">NQB</a>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#products">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ────────────────────────────── -->
+  <section id="hero">
+    <canvas id="heroCanvas" class="hero-canvas"></canvas>
+    <div class="hero-inner container">
+      <div class="hero-text" data-reveal>
+        <p class="eyebrow">Medicine · Programming · Research</p>
+        <h1 class="hero-name">Ngô<br/><span>Quang Bảo</span></h1>
+        <p class="hero-school">HUS High School for the Gifted</p>
+        <p class="hero-bio">
+          A medicine-track student passionate about merging traditional Vietnamese
+          pharmacology with modern science. ICPC 2026 Gold Medalist. Always exploring
+          the intersection of healthcare, research, and technology.
+        </p>
+        <div class="hero-pills">
+          <a class="pill" href="mailto:bacelonarealmandrid@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            bacelonarealmandrid@gmail.com
+          </a>
+          <span class="pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            May 1, 2009
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap" data-reveal data-delay="150">
+        <!-- Replace with: assets/avatar.jpg -->
+        <img src="assets/avatar.jpg" alt="Portrait of Ngô Quang Bảo" class="hero-photo"/>
+        <div class="hero-badge">
+          <span class="badge-icon">🏅</span>
+          <div>
+            <div class="badge-label">ICPC 2026</div>
+            <div class="badge-value">Gold Medal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>scroll</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19,12 12,19 5,12"/></svg>
+    </div>
+  </section>
+
+  <!-- ── ACADEMICS ────────────────────────── -->
+  <section id="academics" class="section-dark">
+    <div class="container">
+      <p class="section-label">Education</p>
+      <h2 class="section-title">Academics &amp; Scores</h2>
+      <div class="section-line"></div>
+
+      <div class="academics-layout">
+        <div class="academics-img-wrap" data-reveal>
+          <!-- Replace with: assets/school.jpg -->
+          <img src="assets/school.jpg" alt="HUS High School for the Gifted campus"/>
+          <div class="img-caption">HUS High School for the Gifted · Hanoi</div>
+        </div>
+
+        <div class="academics-scores" data-reveal data-delay="100">
+          <div class="school-card">
+            <span class="school-icon">🏫</span>
+            <div>
+              <div class="school-name">HUS High School for the Gifted</div>
+              <div class="school-sub">Specialized school · Medicine track · Hanoi, Vietnam</div>
+            </div>
+          </div>
+
+          <div class="scores-grid">
+            <div class="score-card">
+              <div class="score-num">9.3</div>
+              <div class="score-meta">
+                <div class="score-label">GPA</div>
+                <div class="score-sub">Grade 10 · Excellent</div>
+              </div>
+            </div>
+            <div class="score-card">
+              <div class="score-num">9.3</div>
+              <div class="score-meta">
+                <div class="score-label">GPA</div>
+                <div class="score-sub">Grade 11 · Excellent</div>
+              </div>
+            </div>
+            <div class="score-card">
+              <div class="score-num">1xxx</div>
+              <div class="score-meta">
+                <div class="score-label">SAT</div>
+                <div class="score-sub">College Board</div>
+              </div>
+            </div>
+            <div class="score-card">
+              <div class="score-num">x.x</div>
+              <div class="score-meta">
+                <div class="score-label">IELTS</div>
+                <div class="score-sub">Academic · Band 7</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── AWARDS ───────────────────────────── -->
+  <section id="awards" class="section-base">
+    <div class="container">
+      <p class="section-label">Honours &amp; Awards</p>
+      <h2 class="section-title">Achievements</h2>
+      <div class="section-line"></div>
+
+      <div class="timeline">
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <p class="timeline-meta">ICPC 2026 · International Collegiate Programming Contest</p>
+            <h3 class="timeline-title">
+              Formulation &amp; Evaluation of Herbal Effervescent Granules<br/>
+              from Vietnamese Medicinal Plants
+            </h3>
+            <div class="timeline-medal">🥇 Gold Medal</div>
+            <p class="timeline-desc">
+              Research on preparing and evaluating herbal effervescent tablet formulations
+              derived from two Vietnamese medicinal plants — <em>Folium Perillae frutescensis</em>
+              (Perilla leaf) and <em>Herba Houttuyniae cordatae</em> (Heartleaf) — as a
+              natural fever-reducing agent. The project bridges traditional Vietnamese herbal
+              medicine with modern pharmaceutical technology.
+            </p>
+          </div>
+          <div class="timeline-img" data-reveal data-delay="150">
+            <!-- Replace with: assets/award-icpc.jpg -->
+            <img src="assets/ICPC 2026/cert.jpg" alt="ICPC 2026 Gold Medal ceremony"/>
+            <div class="img-caption">ICPC 2026 · Gold Medal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ACTIVITIES ───────────────────────── -->
+  <section id="activities" class="section-dark">
+    <div class="container">
+      <p class="section-label">Social Work &amp; Activities</p>
+      <h2 class="section-title">Community Involvement</h2>
+      <div class="section-line"></div>
+  
+      <div class="activities-wrapper">
+  
+        <div class="activity-card" data-reveal>
+          <div class="activity-img-side">
+            <div class="activity-gallery">
+              <div class="gallery-item main-img">
+                <img src="assets/Thiện nguyện - BV Đa khoa Xanh Pôn/cert.jpg" alt="Delivering gifts to patients at Saint Paul General Hospital" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Thiện nguyện - BV Đa khoa Xanh Pôn/xanhpon (2).jpg" alt="Handing over care packages to pediatric and elderly patients" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Thiện nguyện - BV Đa khoa Xanh Pôn/xanhpon (10).jpg" alt="Volunteer group photo at the hospital main lobby" />
+              </div>
+            </div>
+            <div class="activity-overlay">
+              <span class="activity-tag">Volunteer · 2026</span>
+            </div>
+          </div>
+          <div class="activity-body">
+            <span class="activity-tag-inline">Volunteer · 2026</span>
+            <h3 class="activity-title">Saint Paul General Hospital Charity Tour</h3>
+            <p class="activity-desc">
+              Organized a volunteer visit and delivered meaningful gift packages to underprivileged
+              inpatients undergoing long-term treatment. Beyond providing material support, the initiative
+              brought timely emotional encouragement, spreading warmth and empowering patients in their
+              courageous battles against illness.
+            </p>
+            <div class="activity-stats">
+              <div class="activity-stat">
+                <div class="stat-value">2026</div>
+                <div class="stat-label">Year</div>
+              </div>
+              <div class="activity-stat">
+                <div class="stat-value">Healthcare</div>
+                <div class="stat-label">Focus</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="activity-card" data-reveal>
+          <div class="activity-img-side">
+            <div class="activity-gallery">
+              <div class="gallery-item main-img">
+                <img src="assets/Mùa đông ấm 2025/cert.jpg" alt="Warm Winter 2025 volunteer program" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Mùa đông ấm 2025/muadongam (1).jpg" alt="Delivering essential supplies to children" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Mùa đông ấm 2025/muadongam (2).jpg" alt="Delivering essential supplies to children 2" />
+              </div>
+            </div>
+            <div class="activity-overlay">
+              <span class="activity-tag">Volunteer · 2025</span>
+            </div>
+          </div>
+          <div class="activity-body">
+            <span class="activity-tag-inline">Volunteer · 2025</span>
+            <h3 class="activity-title">Warm Winter 2025</h3>
+            <p class="activity-desc">
+              Participated in the "Warm Winter 2025" volunteer program — a journey delivering
+              warmth, essential supplies, and care to children and families in remote highland
+              communities during the coldest months. Beyond charity, it was a meaningful
+              exercise in empathy, community responsibility, and hands-on social engagement.
+            </p>
+            <div class="activity-stats">
+              <div class="activity-stat">
+                <div class="stat-value">2025</div>
+                <div class="stat-label">Year</div>
+              </div>
+              <div class="activity-stat">
+                <div class="stat-value">Community</div>
+                <div class="stat-label">Focus</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESEARCH ──────────────────────────── -->
+  <section id="research" class="section-base">
+    <div class="container">
+      <p class="section-label">Research</p>
+      <h2 class="section-title">Scientific Research</h2>
+      <div class="section-line"></div>
+
+      <div class="placeholder-card" data-reveal>
+        <div class="placeholder-visual">
+          <!-- Replace with: assets/research-placeholder.jpg -->
+          <img src="assets/research-placeholder.jpg" alt="Research in progress" class="placeholder-img"/>
+          <div class="placeholder-overlay">
+            <div class="placeholder-icon">🔬</div>
+            <p class="placeholder-heading">Research in Progress</p>
+            <p class="placeholder-sub">Currently conducting research. Details will be published soon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUCTS ──────────────────────────── -->
+  <section id="products" class="section-dark">
+    <div class="container">
+      <p class="section-label">Personal Projects</p>
+      <h2 class="section-title">Products &amp; Builds</h2>
+      <div class="section-line"></div>
+  
+      <div class="project-card" data-reveal>
+        <div class="project-img-side">
+          <div class="project-gallery">
+            <div class="gallery-item main-img">
+              <img src="assets/vetiver-research-1.jpg"
+                alt="In vitro antimicrobial assay of Vetiver root extracts against pathogenic bacteria" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/vetiver-research-2.jpg" alt="Phytochemical extraction process from Vetiver grass roots" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/vetiver-research-3.jpg" alt="Prototype of the eco-friendly herbal sanitizer formulation" />
+            </div>
+          </div>
+          <div class="project-overlay-tag">
+            <span class="project-tag">Research &amp; Innovation</span>
+          </div>
+        </div>
+  
+        <div class="project-body">
+          <span class="project-tag-inline">Research &amp; Innovation</span>
+          <h3 class="project-title">Antimicrobial Efficacy of Vetiver Root Extracts &amp; Sanitizer Applications</h3>
+  
+          <p class="project-desc">
+            An independent research project investigating the zone of inhibition and minimal inhibitory concentration
+            (MIC) of <i>Chrysopogon zizanioides</i> (Vetiver) root extracts against common pathogenic microorganisms. By
+            optimizing the solvent extraction process, the study successfully evaluates the bio-efficacy of volatile
+            essential oils and phytochemicals, paving the way for developing an organic, eco-friendly, and non-toxic
+            herbal sanitizer formulation.
+          </p>
+  
+          <div class="project-stats">
+            <div class="project-stat">
+              <div class="stat-value">Vetiveria</div>
+              <div class="stat-label">Botanical Focus</div>
+            </div>
+            <div class="project-stat">
+              <div class="stat-value">Inhibition</div>
+              <div class="stat-label">Core Target</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- ── CONTACT ───────────────────────────── -->
+  <section id="contact" class="section-contact">
+    <div class="container contact-inner" data-reveal>
+      <p class="section-label">Get in Touch</p>
+      <h2 class="contact-title">Let's Connect</h2>
+      <p class="contact-sub">
+        Open to conversations about medicine, research, or anything interesting.
+      </p>
+  
+      <div class="contact-actions">
+        <a class="contact-email" href="mailto:bacelonarealmandrid@gmail.com">
+          bacelonarealmandrid@gmail.com
+        </a>
+  
+        <!-- Nút Tải CV -->
+        <a class="pill cv-download" href="assets/NgoQuangBao_CV.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Curriculum Vitae
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ── FOOTER ────────────────────────────── -->
+  <footer>
+    <div class="container footer-inner">
+      <!-- Khu vực trên: Quote & Socials -->
+      <div class="footer-top">
+        <!-- Câu quote thay đổi ngẫu nhiên bằng JS -->
+        <div class="footer-quote-wrap">
+          <p id="footerQuote" class="footer-quote">"The art of medicine consists of amusing the patient while nature cures
+            the disease."</p>
+          <span id="footerQuoteAuthor" class="footer-quote-author">— Voltaire</span>
+        </div>
+  
+        <!-- Mạng xã hội -->
+        <div class="footer-socials">
+          <a href="https://facebook.com/your-profile" target="_blank" rel="noopener noreferrer" class="social-icon-link"
+            aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Đường ngăn cách nhỏ -->
+      <div class="footer-divider"></div>
+  
+      <!-- Khu vực dưới: Copyright -->
+      <div class="footer-bottom">
+        <span>© 2026 Ngô Quang Bảo</span>
+        <span class="footer-dot">·</span>
+        <span>Built with intention</span>
+      </div>
+    </div>
+  
+    <!-- Nút cuộn nhanh lên đầu trang -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="" />
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
